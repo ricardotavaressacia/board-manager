@@ -49,7 +49,7 @@ function toolbar_banners_items() {
 //----------------------------------------------------------------------------------------------------
 function grid_banners_items(){
 	myGrid2 = myLayout2.cells("b").attachGrid();
-	myGrid2.setImagesPath("./imgs/");
+//	myGrid2.setImagesPath("./imgs/");
 	myGrid2.setHeader("Image,Description,Duration,Active");
 	myGrid2.setInitWidths("120,500,60,70");
 	myGrid2.setColAlign("center,left,center,center");
@@ -71,10 +71,10 @@ function manage_board_items( bannerId, elementId){
 	let actionFile = ''; 
 	if( !elementId ){
 		windowsText = 'Insert ';
-		actionFile = 'form_add_painel.php';
+		actionFile = 'form_add_banner_item.php';
 	}else{ 
 		windowsText = 'Update ';
-		actionFile = 'form_edit_painel.php';
+		actionFile = 'form_edit_banner_item.php';
 	} 
 
 	if (!myWins.window("w1")) {

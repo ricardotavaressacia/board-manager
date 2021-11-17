@@ -37,9 +37,9 @@
 				
 					$description	=	$_POST["description"]; 
 					$image			=	$novo_nome_foto;
-					$duration		=	$_POST["duracao"]; 
+					$duration		=	$_POST["duration"]; 
 					$banner_id		=	$_GET["banner_id"]; 
-					$active			=	$_POST["ativo"]; 
+					$active			=	$_POST["active"]; 
 					$updatedBy 		=	$res_login;
 					$updatedAt 		= 	date("Y-m-d H:i:s"); 
 

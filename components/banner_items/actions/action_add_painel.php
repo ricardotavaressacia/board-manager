@@ -25,9 +25,9 @@
 			
 					$description	=	$_POST["description"]; 
 					$image			=	$novo_nome_foto;
-					$duration		=	$_POST["duracao"]; 
+					$duration		=	$_POST["duration"]; 
 					$banner_id		=	$_GET["banner_id"]; 
-					$active			=	$_POST["ativo"]; 
+					$active			=	$_POST["active"]; 
 					$createdBy 		=	$res_login;
 					$createdAt 		= 	date("Y-m-d H:i:s"); 
 			

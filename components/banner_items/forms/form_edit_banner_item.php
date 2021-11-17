@@ -30,16 +30,17 @@
 		echo('<item type="block" width="auto" blockOffset="5">');
  
 			echo('<item type="block" width="auto" blockOffset="5">');
-				echo('<item type="block" width="auto" blockOffset="0">');
-					echo('<item type="button" name="remove" value="Remover Imagem" width="130" offsetLeft="0" position="absolute" inputLeft="4" inputTop="138"/>');
-					echo ('<item type="image" id="foto" name="foto" url="components/banner_items/actions/manage_photo.php" value="'.$image.'" required="true" imageWidth="150" imageHeight="150" inputWidth="130" inputHeight="130" offsetLeft="2" />');
-					echo ('<item type="hidden" name="nome_foto" value="" />');
-				echo('</item>');
-				echo('<item type="newcolumn"  offset="40" />');
-	
-				echo('<item label="Duração" 	labelWidth="70"  name="duracao"  type="input" width="85"  validate="NotEmpty,ValidInteger" value="'.$duration.'"  required="true" />');	
+			echo('<item type="block" width="auto" blockOffset="0">');
+			echo('<item type="button" name="remove" value="Remover Imagem" width="130" offsetLeft="0" position="absolute" inputLeft="4" inputTop="138"/>');
+			echo ('<item type="image" id="foto" name="foto" url="components/banner_items/actions/manage_photo.php" value="'.$image.'" required="true" imageWidth="150" imageHeight="150" inputWidth="130" inputHeight="130" offsetLeft="2" />');
+			echo ('<item type="hidden" name="nome_foto" value="" />');
+			echo('</item>');
+			echo('<item type="newcolumn"  offset="40" />');
+			
+				echo('<item label="Description" 	labelWidth="70"  name="description"  type="input" width="158"  value="'.$description.'" position="label-top" rows="4"/>');	
+				echo('<item label="Duration" 	labelWidth="70"  name="duration"  type="input" width="85"  validate="NotEmpty,ValidInteger" value="'.$duration.'"  required="true" />');	
 
-				echo('<item label="Ativo" labelWidth="70"  name="ativo" type="combo" width="85" validate="NotEmpty"  readonly="true" required="true" >');
+				echo('<item label="Active" labelWidth="70"  name="active" type="combo" width="85" validate="NotEmpty"  readonly="true" required="true" >');
 					if( $active ){
 						echo('<option value="1" text="Sim" selected="true" />');			
 						echo('<option value="0" text="Não" />');					
@@ -48,7 +49,6 @@
 						echo('<option value="0" text="Não" selected="true" />');	
 					}
 				echo('</item>');
-				echo('<item label="Descrição" 	labelWidth="70"  name="description"  type="input" width="158"  value="'.$description.'" position="label-top" rows="4"/>');	
 			echo('</item>');		
 			echo('</item>');		
 	

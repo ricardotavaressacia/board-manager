@@ -12,11 +12,11 @@
 				echo('</item>');
 				echo('<item type="newcolumn"  offset="40" />');
 	
-				echo('<item label="Descrição" 	labelWidth="70"  name="description"  type="input" width="158"  value="" position="label-top" rows="4"/>');	
-				echo('<item label="Duração" 	labelWidth="70"  name="duracao"  type="input" width="85"  validate="NotEmpty,ValidInteger" value=""  required="true" />');	
+				echo('<item label="Description" 		labelWidth="70"  	name="description"  type="input" width="158"  value="" position="label-top" rows="4"/>');	
+				echo('<item label="Duration(seconds)" 	labelWidth="105"	name="duracao"  	type="input" width="50"  validate="NotEmpty,ValidInteger" value=""  required="true" />');	
 				
 				
-				echo('<item label="Ativo" labelWidth="70"  name="ativo" type="combo" width="85" validate="NotEmpty"  readonly="true" required="true" >');
+				echo('<item label="Active" labelWidth="105"  name="ativo" type="combo" width="50" validate="NotEmpty"  readonly="true" required="true" >');
 				echo('<option value="1" text="Sim" selected="true" />');			
 				echo('<option value="0" text="Não" />');					
 				echo('</item>');
